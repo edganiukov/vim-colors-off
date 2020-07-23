@@ -37,7 +37,7 @@ let s:light_blue      = { "gui": "#83A598", "cterm": "153" }
 let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
 let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
 let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
-let s:light_green     = { "gui": "#98971a", "cterm": "10"  }
+let s:light_green     = { "gui": "#98971A", "cterm": "10"  }
 let s:dark_purple     = { "gui": "#523C79", "cterm": "5"   }
 let s:light_purple    = { "gui": "#6855DE", "cterm": "13"  }
 let s:yellow          = { "gui": "#F3E430", "cterm": "11"  }
@@ -150,7 +150,7 @@ call s:h("WarningMsg",    {"fg": s:red})
 call s:h("WildMenu",      {"fg": s:bg, "bg": s:norm})
 call s:h("Folded",        {"fg": s:medium_gray})
 call s:h("FoldColumn",    {"fg": s:bg_subtle})
-call s:h("DiffAdd",       {"fg": s:green})
+call s:h("DiffAdd",       {"fg": s:dark_green})
 call s:h("DiffDelete",    {"fg": s:red})
 call s:h("DiffChange",    {"fg": s:dark_yellow})
 call s:h("DiffText",      {"fg": s:dark_blue})

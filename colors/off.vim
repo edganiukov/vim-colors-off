@@ -24,9 +24,8 @@ let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
 let s:light_black     = { "gui": "#424242", "cterm": "8"   }
 let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
 let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
-let s:light_gray      = { "gui": "#B2B2B2", "cterm": "249" }
-let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
-let s:dark_gray       = { "gui": "#949494", "cterm": "246" }
+let s:light_gray      = { "gui": "#9E9E9E", "cterm": "247" }
+let s:lighter_gray    = { "gui": "#E4E4E4", "cterm": "254" }
 let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#b16286", "cterm": "1"   }
@@ -48,8 +47,8 @@ if &background == "dark"
   let s:bg              = s:black
   let s:bg_subtle       = s:light_black
   let s:bg_very_subtle  = s:subtle_black
-  let s:norm            = s:lighter_gray
-  let s:norm_subtle     = s:light_gray
+  let s:norm            = s:light_gray
+  let s:norm_subtle     = s:lighter_gray
   let s:purple          = s:light_purple
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
@@ -83,8 +82,9 @@ endfunction
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:orange, "fg": s:norm})
 call s:h("Comment",       {"fg": s:bg_subtle})
-
+call s:h("Statement",     {"fg": s:norm_subtle})
 call s:h("Constant",      {"fg": s:green})
+
 " hi! link Constant         Normal
 hi! link Character        Constant
 hi! link Number           Constant
@@ -96,7 +96,6 @@ hi! link String           Constant
 hi! link Identifier       Normal
 hi! link Function         Identifier
 
-call s:h("Statement",     {"fg": s:dark_gray})
 " hi! link Statement        Normal
 hi! link Conditonal       Statement
 hi! link Repeat           Statement

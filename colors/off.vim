@@ -26,6 +26,7 @@ let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
 let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
 let s:light_gray      = { "gui": "#B2B2B2", "cterm": "249" }
 let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
+let s:dark_gray       = { "gui": "#949494", "cterm": "246" }
 let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#b16286", "cterm": "1"   }
@@ -95,7 +96,7 @@ hi! link String           Constant
 hi! link Identifier       Normal
 hi! link Function         Identifier
 
-call s:h("Statement",     {"fg": s:red})
+call s:h("Statement",     {"fg": s:dark_gray})
 " hi! link Statement        Normal
 hi! link Conditonal       Statement
 hi! link Repeat           Statement

@@ -44,7 +44,7 @@ let s:yellow          = { "gui": "#F3E430", "cterm": "11"  }
 let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 
 let s:bg              = s:black
-let s:bg_subtle       = s:light_black
+let s:bg_subtle       = s:lighter_black
 let s:bg_very_subtle  = s:subtle_black
 let s:norm            = s:lighter_gray
 let s:norm_subtle     = s:light_gray
@@ -52,7 +52,7 @@ let s:purple          = s:light_purple
 let s:cyan            = s:light_cyan
 let s:green           = s:light_green
 let s:red             = s:light_red
-let s:visual          = s:lighter_black
+let s:visual          = s:light_black
 
 " https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)

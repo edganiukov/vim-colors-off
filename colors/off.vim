@@ -32,7 +32,7 @@ let s:light_red       = { "gui": "#b16286", "cterm": "1"   }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
 let s:darker_blue     = { "gui": "#005F87", "cterm": "18"  }
 let s:dark_blue       = { "gui": "#076678", "cterm": "4"   }
-let s:blue            = { "gui": "#458588", "cterm": "12"  }
+let s:blue            = { "gui": "#6F98B3", "cterm": "8"  }
 let s:light_blue      = { "gui": "#83A598", "cterm": "153" }
 let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
 let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
@@ -69,7 +69,7 @@ endfunction
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:orange, "fg": s:norm})
 call s:h("Comment",       {"fg": s:bg_subtle})
-call s:h("Statement",     {"fg": s:red})
+call s:h("Statement",     {"fg": s:blue})
 call s:h("Constant",      {"fg": s:green})
 
 " hi! link Constant         Normal

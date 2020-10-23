@@ -28,11 +28,11 @@ let s:light_gray      = { "gui": "#B2B2B2", "cterm": "249" }
 let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
 let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
-let s:light_red       = { "gui": "#b16286", "cterm": "1"   }
+let s:light_red       = { "gui": "#B16286", "cterm": "11"   }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
 let s:darker_blue     = { "gui": "#005F87", "cterm": "18"  }
 let s:dark_blue       = { "gui": "#076678", "cterm": "4"   }
-let s:blue            = { "gui": "#6F98B3", "cterm": "8"  }
+let s:blue            = { "gui": "#6F98B3", "cterm": "11"  }
 let s:light_blue      = { "gui": "#83A598", "cterm": "153" }
 let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
 let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
@@ -69,7 +69,7 @@ endfunction
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:orange, "fg": s:norm})
 call s:h("Comment",       {"fg": s:bg_subtle})
-call s:h("Statement",     {"fg": s:blue})
+call s:h("Statement",     {"fg": s:red})
 call s:h("Constant",      {"fg": s:green})
 
 " hi! link Constant         Normal

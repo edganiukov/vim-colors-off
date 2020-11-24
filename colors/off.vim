@@ -67,6 +67,7 @@ function! s:h(group, style)
 endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
+call s:h("NormalLighter",   {"bg": s:bg_subtle, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:orange, "fg": s:norm})
 call s:h("Comment",       {"fg": s:bg_subtle})
 call s:h("Statement",     {"fg": s:red})

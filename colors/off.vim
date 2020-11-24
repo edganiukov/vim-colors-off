@@ -67,7 +67,6 @@ function! s:h(group, style)
 endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
-call s:h("NormalLighter",   {"bg": s:bg_subtle, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:orange, "fg": s:norm})
 call s:h("Comment",       {"fg": s:bg_subtle})
 call s:h("Statement",     {"fg": s:red})
@@ -156,10 +155,10 @@ else
   call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_green})
 endif
 
-call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_subtle})
+call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_very_subtle})
 call s:h("PmenuSel",      {"fg": s:norm, "bg": s:blue})
-call s:h("PmenuSbar",     {"fg": s:norm, "bg": s:bg_subtle})
-call s:h("PmenuThumb",    {"fg": s:norm, "bg": s:bg_subtle})
+call s:h("PmenuSbar",     {"fg": s:norm, "bg": s:bg_very_subtle})
+call s:h("PmenuThumb",    {"fg": s:norm, "bg": s:bg_very_subtle})
 call s:h("TabLine",       {"fg": s:norm, "bg": s:bg_very_subtle})
 call s:h("TabLineSel",    {"fg": s:blue, "bg": s:bg_subtle, "gui": "bold", "cterm": "bold"})
 call s:h("TabLineFill",   {"fg": s:norm, "bg": s:bg_very_subtle})

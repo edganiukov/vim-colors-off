@@ -28,12 +28,12 @@ let s:light_gray      = { "gui": "#B2B2B2", "cterm": "249" }
 let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
 let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
-let s:light_red       = { "gui": "#B16286", "cterm": "11"   }
+let s:light_red       = { "gui": "#B16286", "cterm": "11"  }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
 let s:darker_blue     = { "gui": "#005F87", "cterm": "18"  }
 let s:dark_blue       = { "gui": "#076678", "cterm": "4"   }
 let s:blue            = { "gui": "#6F98B3", "cterm": "11"  }
-let s:light_blue      = { "gui": "#83A598", "cterm": "153" }
+let s:light_blue      = { "gui": "#778899", "cterm": "67"  }
 let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
 let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
 let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
@@ -52,6 +52,7 @@ let s:purple          = s:light_purple
 let s:cyan            = s:light_cyan
 let s:green           = s:light_green
 let s:red             = s:light_red
+let s:blue            = s:light_blue
 let s:visual          = s:light_black
 
 " https://github.com/noahfrederick/vim-hemisu/
@@ -70,7 +71,7 @@ call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:orange, "fg": s:norm})
 call s:h("Comment",       {"fg": s:bg_subtle})
 call s:h("Statement",     {"fg": s:red})
-call s:h("Constant",      {"fg": s:green})
+call s:h("Constant",      {"fg": s:blue})
 
 " hi! link Constant         Normal
 hi! link Character        Constant
@@ -116,7 +117,7 @@ call s:h("Underlined",    {"fg": s:norm, "gui": "underline", "cterm": "underline
 call s:h("Ignore",        {"fg": s:bg})
 call s:h("Error",         {"fg": s:pink })
 call s:h("Todo",          {"fg": s:actual_white })
-call s:h("SpecialKey",    {"fg": s:light_green})
+call s:h("SpecialKey",    {"fg": s:green})
 call s:h("NonText",       {"fg": s:medium_gray})
 call s:h("Directory",     {"fg": s:blue})
 call s:h("ErrorMsg",      {"fg": s:pink})
@@ -130,7 +131,7 @@ call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_very_subtle})
 call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
 call s:h("VertSplit",     {"bg": s:bg_very_subtle, "fg": s:bg_very_subtle})
-call s:h("Title",         {"fg": s:light_blue})
+call s:h("Title",         {"fg": s:blue})
 call s:h("Visual",        {"bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_subtle})
 call s:h("WarningMsg",    {"fg": s:red})
@@ -141,16 +142,16 @@ call s:h("DiffAdd",       {"fg": s:dark_green})
 call s:h("DiffDelete",    {"fg": s:red})
 call s:h("DiffChange",    {"fg": s:dark_yellow})
 call s:h("DiffText",      {"fg": s:dark_blue})
-call s:h("SignColumn",    {"fg": s:light_green})
+call s:h("SignColumn",    {"fg": s:green})
 
 if has("gui_running")
   call s:h("SpellBad",    {"gui": "underline", "sp": s:red})
-  call s:h("SpellCap",    {"gui": "underline", "sp": s:light_green})
+  call s:h("SpellCap",    {"gui": "underline", "sp": s:green})
   call s:h("SpellRare",   {"gui": "underline", "sp": s:pink})
   call s:h("SpellLocal",  {"gui": "underline", "sp": s:dark_green})
 else
   call s:h("SpellBad",    {"cterm": "underline", "fg": s:red})
-  call s:h("SpellCap",    {"cterm": "underline", "fg": s:light_green})
+  call s:h("SpellCap",    {"cterm": "underline", "fg": s:green})
   call s:h("SpellRare",   {"cterm": "underline", "fg": s:pink})
   call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_green})
 endif

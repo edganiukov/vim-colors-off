@@ -91,6 +91,7 @@ hi! link Label            Statement
 hi! link Operator         Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
+hi! link Structure        Statement
 
 "call s:h("PreProc",       {"fg": s:cyan})
 hi! link PreProc          Normal
@@ -102,7 +103,6 @@ hi! link PreCondit        PreProc
 "call s:h("Type",          {"fg": s:purple})
 hi! link Type             Normal
 hi! link StorageClass     Type
-hi! link Structure        Type
 hi! link Typedef          Type
 
 "call s:h("Special",       {"fg": s:pink})
